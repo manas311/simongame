@@ -1,13 +1,81 @@
-body {
-  text-align: center;
-  background-color: #011F3F;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: all .2s ease;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+body{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+img{
+    height:auto;
+    width: 100%;
+}
+.container1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#background{
+    background: rgb(62, 30, 242);
+	background: linear-gradient(
+		315deg,
+		rgba(62, 30, 242, 1) 0%,
+		rgba(174, 128, 214, 1) 100%
+    );
+    height: 100vh;
+    width: 100vw;
+    position: relative;
 }
 
-#level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin: 5%;
-  color: #FEF2BF;
+.bg-img{
+  opacity:80%;
+}
+
+/* 750 x 384 */
+
+.phone{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 750px;
+    width: 384px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: grey;
+    box-shadow: 0 0 15px #111;
+    color:#fff;
+    overflow: hidden;
+}
+
+
+
+.code-with-love{
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    border-radius: 5px;
+    background-color: #111;
+    padding: 10px;
+    color: #fff;
+}
+
+.code-with-love i.fa-heart , .code-with-love span{
+    color: #ff2828;
 }
 
 .container {
@@ -19,8 +87,8 @@ body {
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -47,10 +115,6 @@ body {
 }
 
 .pressed {
-  box-shadow: 0 0 20px white;
+  box-shadow: 5px 5px 20px white;
   background-color: grey;
-}
-
-em {
-  color: white;
 }
